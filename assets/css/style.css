@@ -15,14 +15,18 @@ body {
     color: #ffffff;
 }
 
+/* style for header logotype */
 h1 {
     display: inline-block;
     font-size: 48px;
 }
+/* style "seo" part of the header logotype to make it stand out with different color"*/
 
-.seo {
+#mark-grey {
     color: #d9dcd6;
 }
+
+/* style for top navigation menu bar */
 
  nav {
     padding-top: 15px;
@@ -33,15 +37,20 @@ h1 {
     list-style-type: none;
 }
 
+/* this keeps the links in top nav menu horizontal */
+
 li {
     display: inline-block;
     margin-left: 25px;
 }
+/* style for top navigation menu links */
 
-a {
+.top-nav-link {
     color: #ffffff;
     text-decoration: none;
 }
+
+
 
 p {
     font-size: 16px;
