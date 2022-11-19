@@ -28,87 +28,91 @@
     <header id="main-header">
 
         <h1>Hori<span id="mark-grey">seo</span>n</h1>
+
         <nav>
             <ul>
-                <li><a class="top-nav-link" href="#search-engine-optimization">Search Engine Optimization</a></li>
-                <li><a class="top-nav-link" href="#online-reputation-management">Online Reputation Management</a></li>
-                <li><a class="top-nav-link" href="#social-media-marketing">Social Media Marketing</a></li>
+                <li><a class="top-nav-link" href="#SEO-title">Search Engine Optimization</a></li>
+                <li><a class="top-nav-link" href="#ORM-title">Online Reputation Management</a></li>
+                <li><a class="top-nav-link" href="#SMM-title">Social Media Marketing</a></li>
             </ul>
         </nav>
     </header>
 
     <!--TOP IMAGE ACCESSIBILITY UPDATES:
-        - Changed tag from <div> to <figure>. 
+        - Changed tag from <div> to <section>. 
         - Changed class to id and gave it a semantic name "top-image".
-        - I decided the top image is more than a decorative background and conveys meaning and could benefit from an alt tag, which is why I moved it from CSS to HTML.-->
+        - I decided the top image is more than a decorative background and conveys meaning and could benefit from an alt tag, which is why I moved it from CSS to HTML.
+        - Added role attribute to <section> containing main image to help assistive technology describe it-->
 
-    <figure>
-        <img src="../Accessibility_Project/assets/images/digital-marketing-meeting.jpg"
-            alt="4 persons business meeting in a modern office" id="top-image">
-    </figure>
+    <section role="img">
+        <img id="top-image" src="../Accessibility_Project/assets/images/digital-marketing-meeting.jpg"
+            alt="4 creatives meeting in a modern office">
+    </section>
 
     <!--MAIN CONTENT ACCESSIBILITY UPDATES:
-        - Changed tags from <div> to <section> and <article>. 
+        - Changed tags from <div> to <main> and <section>. 
         - Changed class="content" to id="main-content-container" for clarity. 
         - Changed image and text classes names for clarity. 
         - Despite there being only one image of "main-image_right" class, I decided to keep it as class, because more such images can be added in the future.   
         - Placed all text present main-content-container in a single main-text class, to consolidate CSS.
+        - Added aria-labelledby attributes to sections to make them recognizable as regions by assistive technologies for improved accessibility.
     -->
 
     <main id="main-content-container">
-        <article class="main-text">
+
+        <section aria-labelledby="SEO-title" class="main-text">
             <img src="./assets/images/search-engine-optimization.jpg"
                 alt="A notepad with a SEO concept board on a wooden table" class="main-image_left" />
-            <h2>Search Engine Optimization</h2>
+            <h2 id="SEO-title">Search Engine Optimization</h2>
             <p>The dominance of mobile internet use means that users are searching for the right business as they
                 travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase
                 your visibility and find the right customers for your business.</p>
-        </article>
+        </section>
 
-        <article class="main-text">
+        <section aria-labelledby="ORM-title" class="main-text">
             <img src="./assets/images/online-reputation-management.jpg"
-                alt="A silver laptop with reputation displayed on the screen" class="main-image_right" />
-            <h2>Online Reputation Management</h2>
+                alt="A laptop with the word reputation on the screen" class="main-image_right" />
+            <h2 id="ORM-title">Online Reputation Management</h2>
             <p>The web is full of opinions, and some of these can be negative. Social media allows anyone with an
                 internet connection to say whatever they want about your business. Online Reputation Management gives
                 you the control over what potential customers see when they search for your business.</p>
-        </article>
+        </section>
 
-        <article class="main-text">
+        <section aria-labelledby="SMM-title" class="main-text">
             <img src="./assets/images/social-media-marketing.jpg"
                 alt="Top view of a table covered with social-media related icons" class="main-image_left" />
-            <h2>Social Media Marketing</h2>
+            <h2 id="SMM-title">Social Media Marketing</h2>
             <p>Social media continues to have a sizable influence on buying habits. Social media marketing helps you
                 determine which platforms are suited to your brand, using analytics to find the right markets and
                 increase your lead generation.</p>
-        </article>
+        </section>
 
     </main>
 
     <!--SIDEBAR ACCESSIBILITY UPDATES:
         - Changed tag from <div> to <aside>. 
-        - Changed class to id and gave the id's semantic names: "side-bar", "sidebar-text and "sidebar-icon"
-        - Improved formatting -->
+        - Changed class to id and gave the id's semantic names: "side-bar", "sidebar-text and "sidebar-icon".
+        - Added aria-label for side-bar.
+        - Improved formatting. -->
 
-    <aside id="side-bar">
-        <article class="sidebar-text">
+    <aside id="side-bar" aria-label="side bar">
+        <section class="sidebar-text">
             <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" alt="Black icon of a funnel from cog wheel to dollar sign"
-                class="sidebar-icon" />
+            <img src="./assets/images/lead-generation.png" alt="Icon of a funnel" class="sidebar-icon" />
             <p>Inbound strategies for lead generation require less work for your business, bringing customers directly
                 to your website.</p>
-        </article>
+        </section>
 
-        <article class="sidebar-text">
+        <section class="sidebar-text">
             <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png"
-                alt="Black icon of a business person with a lightbulb in place of head" class="sidebar-icon" />
+            <img src="./assets/images/brand-awareness.png" alt="Icon of a lightbulb-headed person"
+                class="sidebar-icon" />
             <p>Users find your business through paid and organic searches, increasing the search ranking and visibility
                 for your business.</p>
-        </article>
-        <article class="sidebar-text">
+        </section>
+        <section class="sidebar-text">
             <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png" alt="Black icon of cog wheels and dollar signs"
+            <img src="./assets/images/cost-management.png" alt="Icon of cog wheels and dollar signs"
                 class="sidebar-icon" />
             <p>As the search ranking for your business increases, your advertising costs decrease, and you no longer
                 need to advertise your page.</p>
