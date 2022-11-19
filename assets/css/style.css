@@ -1,10 +1,10 @@
 
 
-/* Removed the redundant words from the  CSS selectors' names. 
-   Consolidated some properties under common selectors to avoid redundancies.
-   Changed order of selectors to reflect the flow of the HTML document.
-   Updated classes and id names to reflect changes in the HTML document.
-   Changed single-use elements' selectors from class to id. */
+/* Removed the redundant words from the CSS selectors' names. 
+   - Consolidated some properties under common selectors to avoid redundancies.
+   - Changed order of selectors to reflect the flow of the HTML document.
+   - Updated classes and id names to reflect changes in the HTML document.
+   - Changed single-use elements' selectors from class to id. */
 
 * {
     box-sizing: border-box;
@@ -15,6 +15,8 @@
 body{
     background-color: #d9dcd6;
 }
+
+/*This controls the style of the main header.*/
 
 #main-header{
     padding: 20px;
@@ -33,6 +35,8 @@ h1{
 #mark-grey{
     color: #d9dcd6;
 }
+
+/* This controls the style of the top navigation menu*/
 
 nav{
     padding-top: 15px;
@@ -53,10 +57,16 @@ li{
     text-decoration: none;
 }
 
+/*CSS of the header previously included an image. I moved it from to HTML to include an alt tag.*/
+
 #top-image{
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
 }
+
+/*This controls the style of the main content of the page. 
+I changed multiple selectors' names for better semantics and to avoid redundancies*/
 
 #main-content-container{
     width: 75%;
@@ -91,6 +101,9 @@ h2{
     max-height: 200px;
 }
 
+/*This controls the style of the side bar. 
+I changed multiple selectors' names for better semantics and to avoid redundancies*/
+
 #side-bar{
     margin-right: 20px;
     padding: 20px;
@@ -117,6 +130,10 @@ h3{
     margin: 10px auto;
     max-width: 150px;
 }
+
+/*This controls the style of the footer. 
+I changed the selector name for better semantics.*/
+
 
 footer{
     padding: 30px;
