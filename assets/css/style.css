@@ -104,17 +104,17 @@ h2 {
     background-color: #2589bd;
 }
 
-h3{
+h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.sidebar-text{
+.sidebar-text {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.sidebar-icon{
+.sidebar-icon {
     display: block;
     margin: 10px auto;
     max-width: 150px;
@@ -127,7 +127,7 @@ h3{
     text-align: center; 
 }
 
-.footer h2 {
+h4 {
     font-size: 20px;
 }
 
