@@ -1,35 +1,40 @@
+
+
+/* Removed the redundant words from the  CSS selectors' names. 
+   Consolidated some properties under common selectors to avoid redundancies.
+   Changed order of selectors to reflect the flow of the HTML document.
+   Updated classes and id names to reflect changes in the HTML document.
+   Changed single-use elements' selectors from class to id. */
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-body {
+body{
     background-color: #d9dcd6;
 }
 
-#main-header {
+#main-header{
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-/* Cleaned up (shortened) the names of CSS selectors. Consolidated some properties resulting in fewer */
-
-
-h1 {
+h1{
     display: inline-block;
     font-size: 48px;
 }
 
-/* style "seo" letters in the header logotype, to make them stand out with different color"*/
+/* This is the style for "seo" letters in the header logotype, to make them stand out with different color"*/
 
-#mark-grey {
+#mark-grey{
     color: #d9dcd6;
 }
 
-nav {
+nav{
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -38,38 +43,33 @@ nav {
     list-style-type: none;
 }
 
-li {
+li{
     display: inline-block;
     margin-left: 25px;
 }
 
-
-.top-nav-link {
+.top-nav-link{
     color: #ffffff;
     text-decoration: none;
 }
 
-#top-image {
-    height: 800px;
+#top-image{
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+    height: auto;
 }
 
-#main-content-container {
+#main-content-container{
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-h2 {
+h2{
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.main-text {
+.main-text{
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -79,21 +79,19 @@ h2 {
    
 }
 
-/* Removed <P> selector as it didn't do anything anyway*/
-
-.main-image_left {
+.main-image_left{
     float: left;
     margin-right: 25px;
     max-height: 200px;
 }
 
-.main-image_right {
+.main-image_right{
     float: right;
     margin-left: 25px;
     max-height: 200px;
 }
 
-#side-bar {
+#side-bar{
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -104,32 +102,29 @@ h2 {
     background-color: #2589bd;
 }
 
-h3 {
+h3{
     margin-bottom: 10px;
     text-align: center;
 }
 
-.sidebar-text {
+.sidebar-text{
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.sidebar-icon {
+.sidebar-icon{
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.footer{
+footer{
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center; 
 }
 
-h4 {
+h4{
     font-size: 20px;
 }
-
-Footer © 2022 GitHub,
-Inc. Footer navigation Terms Privacy Security Status Docs

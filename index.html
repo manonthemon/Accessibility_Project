@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 
+   <!--GLOBAL ACCESSIBILITY UPDATES:
+        Added alt tags to images.
+        Made sure the HTML file follows a logical structure.
+        Ensured sequential order of headings.
+        Improved formatting.
+     -->
+
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <!-- Changed page title -->
+    <!--HEAD ACCESSIBILITY UPDATES:
+        Changed page title to a more descriptive one-->
 
     <title>Horiseon Home Page</title>
 </head>
@@ -14,11 +22,11 @@
      - Replaced <div> tag with semantic tags such as <nav>. 
      - Gave top menu links a CSS class "top-nav-link" for cleaner code.
      - Changed the CSS id name of the differently colored part of the logotype for one that is easier to understand.
-     - Fixed formatting of tne ul element -->
+     - Fixed formatting of tne ul element-->
 <body>
     <header id="main-header">
 
-        <h1>Hori<span id="mark-grey">seo</span>n</h1>
+        <h1 title="Horiseon logotype">Hori<span id="mark-grey">seo</span>n</h1>
         <nav>
             <ul>
                 <li><a class="top-nav-link" href="#search-engine-optimization">Search Engine Optimization</a></li>
@@ -28,16 +36,24 @@
         </nav>
     </header>
 
-    <!-- Changed tag from <div> to <figure>. 
-         Changed class to id and gave it a semantic name "top-image" -->
+    <!--TOP IMAGE ACCESSIBILITY UPDATES:
+        Changed tag from <div> to <figure>. 
+        Changed class to id and gave it a semantic name "top-image"
+        Because the image is placed in the CSS and can't have an alt attribute, I added a title attribute to improve accessibility.-->
 
-    <figure id="top-image"></figure>
+    <figure> 
 
-    <!--Changed tags from <div> to <section> and <article>. 
+<img id="top-image" src="../Accessibility_Project/assets/images/digital-marketing-meeting.jpg">
+
+    </figure>
+
+    
+    <!--MAIN CONTENT ACCESSIBILITY UPDATES:
+        Changed tags from <div> to <section> and <article>. 
         Changed class="content" to id="main-content-container" for clarity. 
-        Changed image and text classes names for the same reason. 
+        Changed image and text classes names for clarity. 
         Despite there being only one image of "main-image_right" class, I decided to keep it as class, because more such images can be added in the future.   
-        Placed all text in main-content-container in a single main-text class to consolidate css.
+        Placed all text present main-content-container in a single main-text class, to consolidate CSS.
     -->
 
     <section id="main-content-container">
@@ -67,8 +83,9 @@
 
     </section>
 
-    <!--Changed tag from <div> to <aside>. 
-        Changed class to id and gave the id a semantic names "side-bar", "sidebar-text and "sidebar-icon"
+    <!--SIDEBAR ACCESSIBILITY UPDATES:
+        Changed tag from <div> to <aside>. 
+        Changed class to id and gave the id's semantic names: "side-bar", "sidebar-text and "sidebar-icon"
         Improved formatting -->
 
     <aside id="side-bar">
@@ -92,11 +109,12 @@
                 need to advertise your page.</p>
     </aside>
 
-    <!--Changed <div> to <footer>
-      Replaced <h2> with <h4>
-     Improved formatting -->
+    <!--FOOTER ACCESSIBILITY UPDATES:
+        Changed <div> to <footer>
+        Replaced <h2> with <h4>
+        Improved formatting -->
 
-    <footer class="footer">
+    <footer>
         <h4>Made with ❤️️ by Horiseon</h4>
         <p>&copy; 2019 Horiseon Social Solution Services, Inc.</p>
     </footer>
