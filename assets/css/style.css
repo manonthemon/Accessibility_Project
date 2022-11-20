@@ -147,3 +147,13 @@ footer {
 h4 {
     font-size: 20px;
 }
+
+#made-by {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#footnote {
+    font-size: 15px;
+
+}
