@@ -5,9 +5,9 @@
 
 I've completed this project to learn and practice the art of writing accessible HTML and CSS code. 
 
-At the beginning of the project, I was provided with [starter HTML](../Accessibility_Project/assets/original%20files/starter_index.html) and [starter CSS](../Accessibility_Project/assets/original%20files/starter_style.css) files of an example website. I was tasked with refactoring the code in order to improve its accessibility, while maintaining the looks and the functionality of the original example website, as seen here:
+At the beginning of the project, I was provided with [starter HTML](/original%20files/starter_index.html) and [starter CSS](/original%20files/starter_style.css) files of an example website. I was tasked with refactoring the code in order to improve its accessibility, while maintaining the looks and the functionality of the original example website, as seen here:
 
-![alt text](../Accessibility_Project/assets/images/01-html-css-git-challenge-demo.png)
+![Horiseon home page screenshot](/original%20files/01-html-css-git-challenge-demo.png)
 
 Refactoring the provided code allowed me to:
 
@@ -21,7 +21,7 @@ Refactoring the provided code allowed me to:
 
 No installation is required. The front-end of the website can be seen at https://manonthemon.github.io/Accessibility_Project/. The edited HTML, CSS and other files are visible in the repository. 
 
-I also included the original, unedited [starter HTML](../Accessibility_Project/assets/original%20files/starter_index.html) and [starter CSS](../Accessibility_Project/assets/original%20files/starter_style.css) files for comparison.
+I also included the original, unedited [starter HTML](/original%20files/starter_index.html) and [starter CSS](/original%20files/starter_style.css) files for comparison.
 
 ## Usage
 
