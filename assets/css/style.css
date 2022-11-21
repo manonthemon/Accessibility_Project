@@ -59,7 +59,7 @@ li {
     text-decoration: none;
 }
 
-/*CSS of the header previously included an image. I moved it from to HTML to include an alt tag.*/
+/*CSS of the header previously included an image. I moved it from to HTML to include an alt tag. Further explained in HTML comments*/
 
 #top-image {
     width: 100%;
