@@ -59,6 +59,13 @@ li {
     text-decoration: none;
 }
 
+/* I added this hover class to the header nav menu links to improve their visibility and further enhance accessibility */
+
+.top-nav-link:hover {
+    color: #94cc32;
+    text-decoration: underline;
+}
+
 /*CSS of the header previously included an image. I moved it from to HTML to include an alt tag. Further explained in HTML comments*/
 
 #top-image {
