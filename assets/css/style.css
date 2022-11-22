@@ -1,4 +1,8 @@
-/* Removed the redundant words from the CSS selectors' names. 
+
+
+
+/* Global accessibility updates:
+   - Removed the redundant words from the CSS selectors' names. 
    - Consolidated some properties under common selectors to avoid redundancies.
    - Changed order of selectors to reflect the flow of the HTML document.
    - Updated classes and id names to reflect changes in the HTML document.
@@ -17,7 +21,7 @@ body {
     background-color: #d9dcd6;
 }
 
-/*This controls the style of the main header.*/
+/*This controls the style of the header.*/
 
 #main-header {
     padding: 20px;
@@ -97,6 +101,8 @@ h2 {
     color: #ffffff;
 
 }
+
+/*This controls the style of images embedded in the main section*/
 
 .main-image_left {
     float: left;
